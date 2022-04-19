@@ -36,6 +36,19 @@
     }
 }
 
+.rainy {
+    animation: rainy 20s linear infinite;
+}
+
+@keyframes rainy {
+    0% {
+        transform: translate(0px)
+    }
+    100% {
+        transform: translate(100px)
+    }
+}
+
 .in_box {
     position: relative;
     z-index: 10;

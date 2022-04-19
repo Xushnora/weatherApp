@@ -121,6 +121,33 @@ img {
   }
 }
 
+.rainy {
+  -webkit-animation: rainy 20s linear infinite;
+          animation: rainy 20s linear infinite;
+}
+
+@-webkit-keyframes rainy {
+  0% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+  100% {
+    -webkit-transform: translate(100px);
+            transform: translate(100px);
+  }
+}
+
+@keyframes rainy {
+  0% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+  100% {
+    -webkit-transform: translate(100px);
+            transform: translate(100px);
+  }
+}
+
 .in_box {
   position: relative;
   z-index: 10;
