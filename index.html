@@ -4,20 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <title>Weather</title>
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/flexboxgrid.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
-
   <body>
+
+    <section id="main">
+      <div class="container">
+        <div class="big_box">
+          <div class="img_box">
+            <img class="sun-img" src="images/sun.svg" alt="sun">
+          </div>
+          <div class="in_box">
+            <div class="form_box">
+              <form class="form">
+                <input class="search_input" type="text" placeholder="Search">
+                <button class="searchBtn">
+                  <i class='bx bx-search'></i>
+                </button>
+              </form>
+            </div>
+            <div class="info_box">
+              <div class="country_info">
+                <h2 class="country">Uzbekistan, Tashkent</h2>
+                <p class="temp">13°C</p>
+                <p class="days">Sunny</p>
+              </div>
+              <div class="day_info">
+                <p class="Humidity">Humidity: 40%</p>
+                <p class="wind_Speed">Wind Speed: 13 km/h</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="js/main.js"></script>
   </body>
 </html>

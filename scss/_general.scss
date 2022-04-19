@@ -19,7 +19,11 @@ body {
   margin: 0;
   overflow-x: hidden;
   font-family: "Arial", sans-serif;
-  background-color: #fff;
+  background: #fff;
+  background: url("../images/weather.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 
 img {
