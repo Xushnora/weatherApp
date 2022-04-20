@@ -6,7 +6,7 @@ let temp = document.querySelector('.temp');
 let days = document.querySelector('.days');
 let Humidity = document.querySelector('.Humidity');
 let wind_Speed = document.querySelector('.wind_Speed');
-let main = document.querySelector('#main');
+let main = document.querySelector('.main');
 
 let inputvalue;
 
@@ -53,11 +53,26 @@ function weatherInfo(data) {
     data.weather.forEach((day) => {
         days.innerHTML = day.description;
         if(day.main == "Rain"){
-            img_box.innerHTML = `<img class = "rainy" src="images/rainy.svg" alt="rainy">`
+            img_box.innerHTML = `<img class = "rainy" src="images/rainy.svg" alt="rainy">` 
+            main.classList.add('mainRain');
         } 
+        else {
+            main.classList.remove('mainRain');
+        }
         if(day.main == "Clears"){
             img_box.innerHTML = ` <img class="sun-img" src="images/sun.svg" alt="sun">`
+            main.classList.add('mainClear');
         } 
+        else {
+            main.classList.remove('mainClear');
+        }
+        if(day.main == "Clear"){
+            img_box.innerHTML = ` <img class="sun-img" src="images/sun.svg" alt="sun">`
+            main.classList.add('mainClear');
+        } 
+        else {
+            main.classList.remove('mainClear');
+        }
     });
 
     for (const i in data.main) {

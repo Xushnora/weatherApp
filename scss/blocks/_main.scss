@@ -1,4 +1,4 @@
-#main {
+.main {
     display: flex;
     align-items: center;
     width: 100vw;
@@ -7,6 +7,25 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.mainRain {
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/rains.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainClear {
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/weather.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
 
 .big_box {
     margin-top: 50px;

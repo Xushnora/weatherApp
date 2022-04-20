@@ -58,13 +58,29 @@ img {
   margin-right: auto;
 }
 
-#main {
+.main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: url("../images/weather.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainRain {
+  width: 100vw;
+  height: 100vh;
+  background: url("../images/rains.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainClear {
   width: 100vw;
   height: 100vh;
   background: url("../images/weather.jpg");
