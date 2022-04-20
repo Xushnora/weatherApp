@@ -24,8 +24,13 @@
     background-size: cover;
 }
 
-
-
+.mainSnowy {
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/snowy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .big_box {
     margin-top: 50px;
@@ -64,6 +69,19 @@
 }
 
 @keyframes rainy {
+    50% {
+        transform: translateX(50px)
+    }
+    100% {
+        transform: translateX(-50px)
+    }
+}
+
+.snowy {
+    animation: snowy 10s linear infinite alternate;
+}
+
+@keyframes snowy {
     50% {
         transform: translateX(50px)
     }

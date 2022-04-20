@@ -73,6 +73,21 @@ function weatherInfo(data) {
         else {
             main.classList.remove('mainClear');
         }
+        if(day.main == "Rain"){
+            img_box.innerHTML = `<img class = "rainy" src="images/rainy.svg" alt="rainy">` 
+            main.classList.add('mainSnowy');
+        } 
+        else {
+            main.classList.remove('mainSnowy');
+        }
+        if(day.main == "Snow"){
+            img_box.innerHTML = `<img class = "snowy" src="images/snowy.svg" alt="rainy">` 
+            main.classList.add('mainSnowy');
+        } 
+        else {
+            main.classList.remove('mainSnowy');
+        }
+
     });
 
     for (const i in data.main) {
