@@ -6,6 +6,7 @@ let temp = document.querySelector('.temp');
 let days = document.querySelector('.days');
 let Humidity = document.querySelector('.Humidity');
 let wind_Speed = document.querySelector('.wind_Speed');
+let main = document.querySelector('#main');
 
 let inputvalue;
 
@@ -54,13 +55,12 @@ function weatherInfo(data) {
         if(day.main == "Rain"){
             img_box.innerHTML = `<img class = "rainy" src="images/rainy.svg" alt="rainy">`
         } 
-        if(day.main == "Clear"){
+        if(day.main == "Clears"){
             img_box.innerHTML = ` <img class="sun-img" src="images/sun.svg" alt="sun">`
         } 
     });
 
     for (const i in data.main) {
-        // console.log(i, data.main[i]);
         if(i === 'temp_min') {
             temp.innerHTML = `${data.main[i]}°C`
         } 

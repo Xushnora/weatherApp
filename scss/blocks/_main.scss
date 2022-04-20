@@ -1,7 +1,11 @@
-.main {
+#main {
     display: flex;
     align-items: center;
-    // justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/weather.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .big_box {
@@ -37,15 +41,15 @@
 }
 
 .rainy {
-    animation: rainy 20s linear infinite;
+    animation: rainy 10s linear infinite alternate;
 }
 
 @keyframes rainy {
-    0% {
-        transform: translate(0px)
+    50% {
+        transform: translateX(50px)
     }
     100% {
-        transform: translate(100px)
+        transform: translateX(-50px)
     }
 }
 
